@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "frame_000.png",
+	"frame": {"x":2,"y":2,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+},
+{
+	"filename": "frame_001.png",
+	"frame": {"x":2,"y":2,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+},
+{
+	"filename": "frame_002.png",
+	"frame": {"x":2,"y":2,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+},
+{
+	"filename": "frame_003.png",
+	"frame": {"x":2,"y":2,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+},
+{
+	"filename": "frame_004.png",
+	"frame": {"x":2,"y":2,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+},
+{
+	"filename": "frame_005.png",
+	"frame": {"x":2,"y":72,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+},
+{
+	"filename": "frame_006.png",
+	"frame": {"x":2,"y":142,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+},
+{
+	"filename": "frame_007.png",
+	"frame": {"x":2,"y":72,"w":102,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":68},
+	"sourceSize": {"w":102,"h":68}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "fluttershy_ouch.png",
+	"format": "RGBA8888",
+	"size": {"w":106,"h":212},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8897a78fd98ed1264e05c82c022983b2:cf299b2efb31877fab4e73679555408e:c3236f843e5a573e5fb1ea55487dac13$"
+}
+}
