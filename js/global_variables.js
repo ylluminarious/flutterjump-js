@@ -14,8 +14,9 @@ define(function () {
         rightButton: null,
         leftButton: null,
         
-        // Score
+        // Score and the score's text
         score: null,
+        scoreText: null,
         
         // Fullscreen icon
         fullscreenIcon: null,

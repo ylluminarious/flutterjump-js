@@ -5,7 +5,7 @@ define(["global_variables", "global_constants", "buttons_to_hold", "global_metho
         globalVariables.background.scale.setTo(globalConstants.BACKGROUND_SCALE_FACTOR, globalConstants.BACKGROUND_SCALE_FACTOR);
         
         globalVariables.score = 0;
-        game.add.text(game.world.centerX, 100, globalVariables.score.toString(), {font: "30px Verdana"});
+        globalVariables.scoreText = game.add.text(game.world.centerX, 100, globalVariables.score.toString(), {font: "30px Verdana"});
         
         // Add the fullscreen icon, scale it, enable input on it, and make fullscreen mode have an exact fit
         globalVariables.fullscreenIcon = game.add.sprite(globalConstants.FULLSCREEN_ICON_X_POS, globalConstants.FULLSCREEN_ICON_Y_POS, "fullscreen");
