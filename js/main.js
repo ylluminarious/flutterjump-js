@@ -4,8 +4,7 @@
 
 • (PARTIALLY FIXED; WILL NEED TO GO BACK AND IMPLEMENT A BETTER SOLUTION EVENTUALLY) 
   Figure out how to fix the bug that makes fluttershy move through obstacles when she changes size
-• (GOING TO HAVE TO POST A QUESTION ABOUT WHY THE TEXT OF THE SCORE WON'T UPDATE)
-  Implement scoring with local storage
+• Implement local storage for high scores
 • Change the running animation of fluttershy to her walking animation
 • Perhaps try to optimize mobile controls a bit more?
 • Mobile fullscreen
