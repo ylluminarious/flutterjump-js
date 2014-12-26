@@ -59,6 +59,7 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
         function collectAnimal () {
             globalVariables.animalCollectible.kill();
             globalVariables.score += 1;
+            globalVariables.scoreText.text = globalVariables.score;
         }
     };
     return update;
