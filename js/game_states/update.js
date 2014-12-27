@@ -3,7 +3,7 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
         // Add collision between fluttershy and the ground
         game.physics.arcade.collide(globalVariables.fluttershy, globalVariables.ground);
         // Add collide between fluttershy and the obstacles
-        game.physics.arcade.collide(globalVariables.fluttershy, globalVariables.obstacles);
+        game.physics.arcade.collide(globalVariables.fluttershy, globalVariables.obstacles, gameOver);
         // Do an overlap check between fluttershy and the obstacles for when she passes through the obstacles
         game.physics.arcade.overlap(globalVariables.fluttershy, globalVariables.obstacles, overlapCheck);
         // Add collision between fluttershy and the animal collectibles
@@ -60,6 +60,24 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
             globalVariables.animalCollectible.kill();
             globalVariables.score += 1;
             globalVariables.scoreText.text = globalVariables.score;
+        }
+        
+        // Method called when fluttershy hits an obstacle
+        function gameOver () {
+            // Stop the timer and stop everything from moving
+            globalVariables.obstacleGenerator.timer.stop();
+            globalVariables.ground.autoScroll(0, 0);
+            globalVariables.obstacles.setAll("body.velocity.x", 0);
+            globalVariables.animalCollectible.body.velocity.x = 0;
+            // Load the ouch texture
+            globalVariables.fluttershy.loadTexture("ouch");
+            // Disable input from the keys
+            game.input.keyboard.removeKey(Phaser.Keyboard.SPACEBAR);
+            game.input.keyboard.removeKey(Phaser.Keyboard.F);
+            game.input.keyboard.removeKey(Phaser.Keyboard.LEFT);
+            game.input.keyboard.removeKey(Phaser.Keyboard.RIGHT);
+            game.input.keyboard.removeKey(Phaser.Keyboard.A);
+            game.input.keyboard.removeKey(Phaser.Keyboard.D);
         }
     };
     return update;
