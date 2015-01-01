@@ -64,12 +64,12 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
         
         // Method called when fluttershy hits an obstacle
         function gameOver () {
+            globalVariables.gameOver = true;
             // Stop the timer and stop everything from moving
             globalVariables.obstacleGenerator.timer.stop();
-            globalVariables.ground.autoScroll(0, 0);
-            globalVariables.obstacles.setAll("body.velocity.x", 0);
-            globalVariables.animalCollectible.body.velocity.x = 0;
-            // Load the ouch texture
+            globalVariables.ground.stopScroll();
+            globalVariables.obstacles.setAll("body.velocity.x", globalConstants.STOPPED);
+            globalVariables.animalCollectible.body.velocity.x = globalConstants.STOPPED;
             globalVariables.fluttershy.loadTexture("ouch");
             // Disable input from the keys
             game.input.keyboard.removeKey(Phaser.Keyboard.SPACEBAR);
