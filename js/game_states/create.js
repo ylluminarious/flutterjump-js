@@ -6,6 +6,7 @@ define(["global_variables", "global_constants", "buttons_to_hold", "global_metho
         globalVariables.background = game.add.image(globalConstants.ORIGIN, globalConstants.ORIGIN, "background");
         globalVariables.background.scale.setTo(globalConstants.BACKGROUND_SCALE_FACTOR, globalConstants.BACKGROUND_SCALE_FACTOR);
         
+        // Add the score and the text for the score
         globalVariables.score = 0;
         globalVariables.scoreText = game.add.text(game.world.centerX, 100, globalVariables.score.toString(), {font: "30px Verdana"});
         
