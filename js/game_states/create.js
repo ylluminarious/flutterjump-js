@@ -1,5 +1,7 @@
 define(["global_variables", "global_constants", "buttons_to_hold", "global_methods"], function (globalVariables, globalConstants, holdingButton, globalMethods) {
     var create = function (game) {
+        globalVariables.gameOver = false;
+        
         // Add the background and scale it to fit the game
         globalVariables.background = game.add.image(globalConstants.ORIGIN, globalConstants.ORIGIN, "background");
         globalVariables.background.scale.setTo(globalConstants.BACKGROUND_SCALE_FACTOR, globalConstants.BACKGROUND_SCALE_FACTOR);
