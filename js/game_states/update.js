@@ -15,11 +15,11 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
         // If no input is being received, stop moving
         stopMoving();
         
-        // Controls to move left and right
-        if (globalVariables.rightKey.isDown || globalVariables.d.isDown || globalVariables.rightButton.isDown) {
+        // Controls to move left and right (only works if the game is not over so that the player isn't moving when the game is over)
+        if ( (globalVariables.rightKey.isDown || globalVariables.d.isDown || globalVariables.rightButton.isDown) && globalVariables.gameOver === false ) {
             moveRight();
         }
-        if (globalVariables.leftKey.isDown || globalVariables.a.isDown || globalVariables.leftButton.isDown) {
+        if ( (globalVariables.leftKey.isDown || globalVariables.a.isDown || globalVariables.leftButton.isDown) && globalVariables.gameOver === false) {
             moveLeft();
         }
         // Checks if fluttershy is touching the ground while she is flying through the air; if so, then load the gallop texture and set the set her size to that texture
