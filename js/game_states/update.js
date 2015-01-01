@@ -23,7 +23,7 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
             moveLeft();
         }
         // Checks if fluttershy is touching the ground while she is flying through the air; if so, then load the gallop texture and set the set her size to that texture
-        if (globalVariables.fluttershy.isJumping && globalVariables.fluttershy.body.touching.down) {
+        if (globalVariables.fluttershy.isJumping && globalVariables.fluttershy.body.touching.down && globalVariables.gameOver === false) {
             globalVariables.fluttershy.isJumping = false;
             globalVariables.fluttershy.loadTexture("gallop");
             globalVariables.fluttershy.body.setSize(globalConstants.FLUTTERSHY_RUNNING_WIDTH, globalConstants.FLUTTERSHY_RUNNING_HEIGHT);
