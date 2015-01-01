@@ -32,6 +32,9 @@ define(function () {
         obstacles: null,
         topObstacle: null,
         bottomObstacle: null,
+
+        // Whether game-over has happened yet
+        gameOver: null,
         
         // Background and ground
         background: null,
