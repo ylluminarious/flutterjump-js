@@ -70,7 +70,10 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
             globalVariables.ground.stopScroll();
             globalVariables.obstacles.setAll("body.velocity.x", globalConstants.STOPPED);
             globalVariables.animalCollectible.body.velocity.x = globalConstants.STOPPED;
+            // Load the ouch texture and play it
             globalVariables.fluttershy.loadTexture("ouch");
+            globalVariables.fluttershy.animations.add("ouch", globalConstants.OUCH_FRAMES, globalConstants.FRAME_RATE, globalConstants.LOOP);
+            globalVariables.fluttershy.animations.play("ouch");
             // Disable input from the keys
             game.input.keyboard.removeKey(Phaser.Keyboard.SPACEBAR);
             game.input.keyboard.removeKey(Phaser.Keyboard.F);
