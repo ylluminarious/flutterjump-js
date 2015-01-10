@@ -1,1 +1,1 @@
-A WIP game about Flutteshy.
+A WIP game about Fluttershy.
