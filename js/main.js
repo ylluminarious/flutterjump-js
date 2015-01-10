@@ -18,5 +18,5 @@
 
 require(["game_states/preload", "game_states/create", "game_states/update", "global_constants"], function (preload, create, update, globalConstants) {
     // New Phaser game
-    var game = new Phaser.Game(globalConstants.GAME_WIDTH, globalConstants.GAME_HEIGHT, Phaser.AUTO, "game", { preload: preload, create: create, update: update });
+    var game = new Phaser.Game(globalConstants.GAME_WIDTH, globalConstants.GAME_HEIGHT, Phaser.CANVAS, "game", { preload: preload, create: create, update: update });
 });

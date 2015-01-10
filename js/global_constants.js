@@ -25,11 +25,13 @@ define(function () {
         
         // Constants pertaining to the fluttershy sprite
         FLUTTERSHY_X_POS: 270,
-        FLUTTERSHY_Y_POS: 429,
-        FLUTTERSHY_RUNNING_WIDTH: 136,
-        FLUTTERSHY_RUNNING_HEIGHT: 78,
+        FLUTTERSHY_Y_POS: 420,
+        FLUTTERSHY_WALKING_WIDTH: 102,
+        FLUTTERSHY_WALKING_HEIGHT: 86,
         FLUTTERSHY_FLYING_WIDTH: 104,
         FLUTTERSHY_FLYING_HEIGHT: 94,
+        FLUTTERSHY_OUCH_WIDTH: 102,
+        FLUTTERSHY_OUCH_HEIGHT: 68,
         GRAVITY: 300,
         
         // Velocity constants
@@ -38,11 +40,9 @@ define(function () {
         RIGHT_VELOCITY: 300,
         
         // Constants pertaining to the animation of the fluttershy sprite
-        RUNNING_FRAMES: [ 'frame_000.png', 'frame_001.png', 'frame_002.png', 'frame_003.png', 'frame_004.png', 'frame_005.png', 'frame_006.png', 'frame_007.png', 'frame_008.png', 'frame_009.png', 'frame_010.png', 'frame_011.png' ],
-        FLYING_FRAMES: [ 'frame_000.png', 'frame_001.png', 'frame_002.png', 'frame_003.png', 'frame_004.png', 'frame_005.png', 'frame_006.png', 'frame_007.png', 'frame_008.png', 'frame_009.png', 'frame_010.png', 'frame_011.png', 'frame_012.png', 'frame_013.png', 'frame_014.png', 'frame_015.png' ],
-        OUCH_FRAMES: [ 'frame_000.png', 'frame_001.png', 'frame_002.png', 'frame_003.png', 'frame_004.png', 'frame_005.png', 'frame_006.png', 'frame_007.png' ],
+        WALKING_FRAMES: [ "frame_000.png", "frame_001.png", "frame_002.png", "frame_003.png", "frame_004.png", "frame_005.png", "frame_006.png", "frame_007.png", "frame_008.png", "frame_009.png", "frame_010.png", "frame_011.png", "frame_012.png", "frame_013.png", "frame_014.png", "frame_015.png" ],
+        FLYING_FRAMES: [ "frame_000.png", "frame_001.png", "frame_002.png", "frame_003.png", "frame_004.png", "frame_005.png", "frame_006.png", "frame_007.png", "frame_008.png", "frame_009.png", "frame_010.png", "frame_011.png", "frame_012.png", "frame_013.png", "frame_014.png", "frame_015.png" ],
         FRAME_RATE: 20,
-        OUCH_FRAME_RATE: 7,
         LOOP: true,
         
         // Constants pertaining to the random-range positions of the obstacles

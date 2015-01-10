@@ -22,13 +22,13 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
         if ( (globalVariables.leftKey.isDown || globalVariables.a.isDown || globalVariables.leftButton.isDown) && globalVariables.gameOver === false) {
             moveLeft();
         }
-        // Checks if fluttershy is touching the ground while she is flying through the air; if so, then load the gallop texture and set the set her size to that texture
+        // Checks if fluttershy is touching the ground while she is flying through the air; if so, then load the walk texture and set the set her size to that texture
         if (globalVariables.fluttershy.isJumping && globalVariables.fluttershy.body.touching.down && globalVariables.gameOver === false) {
             globalVariables.fluttershy.isJumping = false;
-            globalVariables.fluttershy.loadTexture("gallop");
-            globalVariables.fluttershy.body.setSize(globalConstants.FLUTTERSHY_RUNNING_WIDTH, globalConstants.FLUTTERSHY_RUNNING_HEIGHT);
-            globalVariables.fluttershy.animations.add("gallop", globalConstants.RUNNING_FRAMES, globalConstants.FRAME_RATE, globalConstants.LOOP);
-            globalVariables.fluttershy.animations.play("gallop");
+            globalVariables.fluttershy.loadTexture("walk");
+            globalVariables.fluttershy.body.setSize(globalConstants.FLUTTERSHY_WALKING_WIDTH, globalConstants.FLUTTERSHY_WALKING_HEIGHT);
+            globalVariables.fluttershy.animations.add("walk", globalConstants.WALKING_FRAMES, globalConstants.FRAME_RATE, globalConstants.LOOP);
+            globalVariables.fluttershy.animations.play("walk");
         }
         
         // Method that checks if fluttershy is overlapping an obstacle (this only happens when the bug occurs while she is changing size)
@@ -70,10 +70,9 @@ define(["global_variables", "global_constants", "global_methods"], function (glo
             globalVariables.ground.stopScroll();
             globalVariables.obstacles.setAll("body.velocity.x", globalConstants.STOPPED);
             globalVariables.animalCollectible.body.velocity.x = globalConstants.STOPPED;
-            // Load the ouch texture and play it
+            // Load the ouch texture
             globalVariables.fluttershy.loadTexture("ouch");
-            globalVariables.fluttershy.animations.add("ouch", globalConstants.OUCH_FRAMES, globalConstants.FRAME_RATE, globalConstants.LOOP);
-            globalVariables.fluttershy.animations.play("ouch");
+            globalVariables.fluttershy.body.setSize(globalConstants.FLUTTERSHY_OUCH_WIDTH, globalConstants.FLUTTERSHY_OUCH_HEIGHT);
             // Disable input from the keys
             game.input.keyboard.removeKey(Phaser.Keyboard.SPACEBAR);
             game.input.keyboard.removeKey(Phaser.Keyboard.F);

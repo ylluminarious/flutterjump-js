@@ -31,14 +31,14 @@ define(["global_variables", "global_constants", "buttons_to_hold", "global_metho
         globalVariables.ground.body.immovable = true;
         
         // Create the fluttershy sprite and do some physics stuff on it, too
-        globalVariables.fluttershy = game.add.sprite(globalConstants.FLUTTERSHY_X_POS, globalConstants.FLUTTERSHY_Y_POS, "gallop");
+        globalVariables.fluttershy = game.add.sprite(globalConstants.FLUTTERSHY_X_POS, globalConstants.FLUTTERSHY_Y_POS, "walk");
         game.physics.arcade.enable(globalVariables.fluttershy);
         globalVariables.fluttershy.body.collideWorldBounds = true;
         globalVariables.fluttershy.body.gravity.y = globalConstants.GRAVITY;
         
-        // Add the gallop animation and play it
-        globalVariables.fluttershy.animations.add("gallop", globalConstants.RUNNING_FRAMES, globalConstants.FRAME_RATE, globalConstants.LOOP);
-        globalVariables.fluttershy.animations.play("gallop");
+        // Add the walk animation and play it
+        globalVariables.fluttershy.animations.add("walk", globalConstants.WALKING_FRAMES, globalConstants.FRAME_RATE, globalConstants.LOOP);
+        globalVariables.fluttershy.animations.play("walk");
         
         // Add the mobile buttons and add functionality for them
         globalVariables.upButton = game.add.button(globalConstants.UP_BUTTON_X_POS, globalConstants.UP_BUTTON_Y_POS, "up arrow", globalMethods.jump);

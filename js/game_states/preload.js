@@ -17,9 +17,9 @@ define(function () {
         game.load.image("mr_beaverton_beaverteeth", "sprites/animals/mr_beaverton_beaverteeth.png");
         game.load.image("squirrel", "sprites/animals/squirrel.png");
         
-        game.load.atlas("gallop", "sprites/fluttershy/fluttershy_running.png", "sprites/fluttershy/fluttershy_running.json");
+        game.load.atlas("walk", "sprites/fluttershy/fluttershy_walking.png", "sprites/fluttershy/fluttershy_walking.json");
         game.load.atlas("fly", "sprites/fluttershy/fluttershy_flying.png", "sprites/fluttershy/fluttershy_flying.json");
-        game.load.atlas("ouch", "sprites/fluttershy/fluttershy_ouch.png", "sprites/fluttershy/fluttershy_ouch.json");
+        game.load.image("ouch", "sprites/fluttershy/fluttershy_ouch.png");
     };
     return preload;
 });
