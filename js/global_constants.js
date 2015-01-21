@@ -36,7 +36,7 @@ define(function () {
         
         // Velocity constants
         JUMP_VELOCITY: -300,
-        LEFT_VELOCITY: -300,
+        LEFT_VELOCITY: -250,
         RIGHT_VELOCITY: 300,
         
         // Constants pertaining to the animation of the fluttershy sprite
@@ -54,13 +54,13 @@ define(function () {
         // Random animal index
         ANIMAL_INDEX: 5,
         
-        // Time interval between each new obstacle
-        TIME_INTERVAL: 3.5,
+        // Time interval between each new obstacle (in seconds)
+        TIME_INTERVAL: 3,
         
         // Ground constants
         GROUND_WIDTH: 800,
         GROUND_HEIGHT: 94,
-        AUTO_SCROLL_SPEED_X: -300,
+        AUTO_SCROLL_SPEED_X: -250,
         AUTO_SCROLL_SPEED_Y: 0
     };
     return globalConstants;
