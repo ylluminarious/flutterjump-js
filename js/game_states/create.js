@@ -70,8 +70,8 @@ define(["global_variables", "global_constants", "buttons_to_hold", "global_metho
             var bottomRandomRange = game.rnd.integerInRange(globalConstants.BOTTOM_RANDOM_RANGE_MINIMUM, globalConstants.BOTTOM_RANDOM_RANGE_MAXIMUM);
             
             // Add the obstacles and enable physics on them
-            globalVariables.topObstacle = globalVariables.obstacles.create(game.width, topRandomRange, "obstacle");
-            globalVariables.bottomObstacle = globalVariables.obstacles.create(game.width, bottomRandomRange, "obstacle");
+            globalVariables.topObstacle = globalVariables.obstacles.create(game.width, topRandomRange, "top obstacle");
+            globalVariables.bottomObstacle = globalVariables.obstacles.create(game.width, bottomRandomRange, "bottom obstacle");
             globalVariables.obstacles.setAll("body.immovable", true);
             globalVariables.obstacles.setAll("body.velocity.x", globalConstants.LEFT_VELOCITY);
             

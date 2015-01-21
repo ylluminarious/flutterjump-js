@@ -3,7 +3,8 @@ define(function () {
         game.load.image("background", "sprites/game_world/background.png");
         game.load.image("fullscreen", "sprites/fullscreen_icons/go_fullscreen.png");
         game.load.image("unfullscreen", "sprites/fullscreen_icons/un_fullscreen.png");
-        game.load.image("obstacle", "sprites/game_world/Rectangle.png");
+        game.load.image("top obstacle", "sprites/game_world/cloud.png");
+        game.load.image("bottom obstacle", "sprites/game_world/tree.png")
         game.load.image("ground", "sprites/game_world/ground.png");
         
         game.load.image("up arrow","sprites/mobile_buttons/up_arrow.png");
