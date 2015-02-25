@@ -1,1 +1,1 @@
-A WIP game about Fluttershy.
+A work-in-progress game about Fluttershy.
