@@ -4,3 +4,4 @@ min
 js/min
 js/game_states/min
 js/frameworks/min
+*.tps
